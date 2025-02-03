@@ -7,6 +7,7 @@
 /* \GENERAL */
 
 
+
 /* HEADER */
 header {
   display: flex;
@@ -33,6 +34,7 @@ header>button {
 /* \HEADER */
 
 
+
 /* MAIN */
 main>div {
   display: flex;
@@ -42,6 +44,7 @@ main>div {
 }
 
 /* \MAIN */
+
 
 
 /* hero - SECTION */
@@ -77,46 +80,48 @@ main>div {
   background-color: #23272a;
   margin-left: .8em;
 }
+
 /* \hero - SECTION */
 
 
-/* SECOND - SECTION */
-.second {
-  padding: 5% 13%;
-}
 
-.second > img {
-  width: 35em;
+/* SECOND - SECTION */
+.second>img {
   padding-right: 2em;
 }
 
-.second>div>h2 {
+
+/* \SECOND - SECTION */
+
+
+
+/* SECOND & THIRD */
+.second, .third {
+  padding: 5% 13%;
+}
+
+.second>img, .third>img {
+  width: 35em;
+}
+
+.second>div>h2, .third>div>h2 {
   font-size: 2.5em;
   padding-bottom: 0.75em;
 }
 
-.second>div>p {
+.second>div>p, .third>div>p {
   max-width: 19.5em;
 }
-/* \SECOND - SECTION */
+/* \SECOND & THIRD */
+
 
 
 /* THIRD - SECTION */
 .third {
-  background-color: grey;
+  background-color: #f6f6f6;
 }
-
-.third div:first-child {
-  background-color: pink;
-  flex-grow: 1;
-}
-
-.third div:last-child {
-  background-color: cornflowerblue;
-  flex-grow: 2;
-}
-
 /* \THIRD - SECTION */
+
 
 
 /* FORTH - SECTION */
@@ -129,6 +134,7 @@ main>div {
 }
 
 /* \FORTH - SECTION */
+
 
 
 /* FIFTH - SECTION */
@@ -147,6 +153,7 @@ main>div {
 }
 
 /* \FIFTH - SECTION */
+
 
 
 /* FOOTER - SECTION */
@@ -171,5 +178,4 @@ footer div>div {
   font-size: small;
   background-color: pink;
 }
-
 /* \FOOTER - SECTION */
