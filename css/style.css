@@ -81,7 +81,7 @@ main>div {
 
 
 /* SECOND - SECTION */
-.second div:hero-child {
+.second div:first-child {
   background-color: cornflowerblue;
   flex-grow: 2;
 }
@@ -99,7 +99,7 @@ main>div {
   background-color: grey;
 }
 
-.third div:hero-child {
+.third div:first-child {
   background-color: pink;
   flex-grow: 1;
 }
@@ -129,12 +129,12 @@ main>div {
   background-color: #23272a;
 }
 
-.fifth div:hero-child {
+.fifth div:first-child {
   background-color: tomato;
   flex-grow: 2;
 }
 
-.fifth div:not(:hero-child) {
+.fifth div:not(:first-child) {
   background-color: cadetblue;
   flex-grow: 1;
 }
