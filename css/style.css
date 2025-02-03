@@ -236,20 +236,22 @@ footer {
   align-items: end;
   background-color: #23272a;
   height: 3.5em;
+  padding-bottom: 2em;
 }
 
 footer>div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aqua;
   height: 2.8em;
-  width: 62.8%;
+  width: 70%;
+  padding-top: 0.5em;
+  border-top: 0.1em #7085d5 solid;
 }
 
-footer div>div {
-  font-size: small;
-  background-color: pink;
+footer>div>button {
+  font-size: 0.7em;
+  color: white;
+  background-color: #7288da;
 }
-
 /* \FOOTER - SECTION */
