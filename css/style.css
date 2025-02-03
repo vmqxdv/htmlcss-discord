@@ -1,7 +1,9 @@
 /* GENERAL */
 * {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 /* \GENERAL */
 
 
@@ -9,51 +11,77 @@
 header {
   display: flex;
   background-color: #255ee9;
-  padding: 1% 6%;
+  padding: 0.8% 6%;
   justify-content: space-between;
   align-items: center;
 }
 
-.links > a {
+.links>a {
   color: white;
   text-decoration: inherit;
   padding: 0 1.5em;
 }
 
-header > button {
+header>button {
   background-color: white;
   height: 2.15em;
   width: 5em;
   border-radius: 1em;
   border: none;
 }
+
 /* \HEADER */
 
 
 /* MAIN */
-main > div {
+main>div {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.8% 19%;
 }
+
 /* \MAIN */
 
 
-/* FIRST - SECTION */
-.first {
-  background-color: blue;
+/* hero - SECTION */
+.hero {
+  height: 27em;
+  background-image: url(../img/jumbo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  color: white;
 }
 
-.first > div {
-  text-align: center;
-  background-color: violet;
+.hero>h2 {
+  font-size: 2.5em;
+  padding-bottom: .6em;
 }
-/* \FIRST - SECTION */
+
+.hero>p {
+  text-align: center;
+  max-width: 68%;
+  padding-bottom: 1.2em;
+}
+
+.hero>div>button {
+  padding: .5em .8em;
+  border-radius: 1em;
+  border: none;
+}
+
+.hero>div>:last-child {
+  color: white;
+  background-color: #23272a;
+  margin-left: .8em;
+}
+/* \hero - SECTION */
 
 
 /* SECOND - SECTION */
-.second div:first-child {
+.second div:hero-child {
   background-color: cornflowerblue;
   flex-grow: 2;
 }
@@ -62,6 +90,7 @@ main > div {
   background-color: pink;
   flex-grow: 1;
 }
+
 /* \SECOND - SECTION */
 
 
@@ -70,7 +99,7 @@ main > div {
   background-color: grey;
 }
 
-.third div:first-child {
+.third div:hero-child {
   background-color: pink;
   flex-grow: 1;
 }
@@ -79,6 +108,7 @@ main > div {
   background-color: cornflowerblue;
   flex-grow: 2;
 }
+
 /* \THIRD - SECTION */
 
 
@@ -87,9 +117,10 @@ main > div {
   background-color: grey;
 }
 
-.forth > div:only-child {
+.forth>div:only-child {
   background-color: green;
 }
+
 /* \FORTH - SECTION */
 
 
@@ -98,15 +129,16 @@ main > div {
   background-color: #23272a;
 }
 
-.fifth div:first-child {
-  background-color:tomato;
+.fifth div:hero-child {
+  background-color: tomato;
   flex-grow: 2;
 }
 
-.fifth div:not(:first-child) {
+.fifth div:not(:hero-child) {
   background-color: cadetblue;
   flex-grow: 1;
 }
+
 /* \FIFTH - SECTION */
 
 
@@ -119,7 +151,7 @@ footer {
   height: 3.5em;
 }
 
-footer > div {
+footer>div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -128,8 +160,9 @@ footer > div {
   width: 62.8%;
 }
 
-footer div > div {
+footer div>div {
   font-size: small;
   background-color: pink;
 }
+
 /* \FOOTER - SECTION */
