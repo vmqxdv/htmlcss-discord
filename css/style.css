@@ -9,6 +9,15 @@ div>button {
   border-radius: 1em;
   border: none;
 }
+
+a {
+  color: white;
+  text-decoration: inherit;
+}
+
+h4, h5 {
+  color: #7085d5;
+}
 /* \GENERAL */
 
 
@@ -23,8 +32,6 @@ header {
 }
 
 .links>a {
-  color: white;
-  text-decoration: inherit;
   padding: 0 1.5em;
 }
 
@@ -45,9 +52,7 @@ main>div {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.8% 19%;
 }
-
 /* \MAIN */
 
 
@@ -166,18 +171,30 @@ main>div {
 /* FIFTH - SECTION */
 .fifth {
   background-color: #23272a;
+  align-items: flex-start;
+  padding: 0;
 }
 
 .fifth div:first-child {
-  background-color: tomato;
-  flex-grow: 2;
+  margin-right: 1em;
 }
 
-.fifth div:not(:first-child) {
-  background-color: cadetblue;
-  flex-grow: 1;
+h4 {
+  font-size: 1.5em;
 }
 
+.fifth>div>h5 {
+  padding-bottom: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding-bottom: 1em;
+}
 /* \FIFTH - SECTION */
 
 
