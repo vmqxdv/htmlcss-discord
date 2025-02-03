@@ -15,9 +15,11 @@ a {
   text-decoration: inherit;
 }
 
-h4, h5 {
+h4,
+h5 {
   color: #7085d5;
 }
+
 /* \GENERAL */
 
 
@@ -53,6 +55,7 @@ main>div {
   justify-content: center;
   align-items: center;
 }
+
 /* \MAIN */
 
 
@@ -100,22 +103,28 @@ main>div {
 
 
 /* SECOND & THIRD */
-.second, .third {
+.second,
+.third {
   padding: 5% 13%;
 }
 
-.second>img, .third>img {
+.second>img,
+.third>img {
   width: 35em;
 }
 
-.second>div>h2, .third>div>h2, .forth>div>h2 {
+.second>div>h2,
+.third>div>h2,
+.forth>div>h2 {
   font-size: 2.5em;
   padding-bottom: 0.75em;
 }
 
-.second>div>p, .third>div>p {
+.second>div>p,
+.third>div>p {
   max-width: 19.5em;
 }
+
 /* \SECOND & THIRD */
 
 
@@ -124,6 +133,7 @@ main>div {
 .third {
   background-color: #f6f6f6;
 }
+
 /* \THIRD - SECTION */
 
 
@@ -164,23 +174,40 @@ main>div {
   color: white;
   background-color: #7288da;
 }
+
 /* \FORTH - SECTION */
 
 
 
 /* FIFTH - SECTION */
 .fifth {
-  background-color: #23272a;
+  display: flex;
+  justify-content: space-between;
   align-items: flex-start;
-  padding: 0;
-}
-
-.fifth div:first-child {
-  margin-right: 1em;
+  background-color: #23272a;
+  padding: 5% 15%;
 }
 
 h4 {
   font-size: 1.5em;
+  padding-bottom: 0.8em;
+}
+
+.fifth>div>div:nth-child(2) {
+  display: flex;
+  color: white;
+  font-size: 0.65em;
+  padding-bottom: 1.6em;
+}
+
+.fifth>div>div>img {
+  height: 1em;
+  padding-right: .5em;
+}
+
+.fifth>div>div>i {
+  color: white;
+  margin-right: 1em;
 }
 
 .fifth>div>h5 {
@@ -190,11 +217,14 @@ h4 {
 ul {
   list-style-type: none;
   padding: 0;
+  color: white;
 }
 
 li {
   padding-bottom: 1em;
+  font-size: 0.8em;
 }
+
 /* \FIFTH - SECTION */
 
 
@@ -221,4 +251,5 @@ footer div>div {
   font-size: small;
   background-color: pink;
 }
+
 /* \FOOTER - SECTION */
